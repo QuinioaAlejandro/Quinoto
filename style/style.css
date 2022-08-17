@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100;1,300&family=Pontano+Sans&family=Yeseva+One&display=swap');
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-color: black;
+  background-image: url(../img/coral\ tonos\ \ violeta\ y\ blanco.png);
+  background-size: cover;
+}
+
+.background-one {
+  background-color: black;
+}
+
+.main-p h1 {
+  color: white;
+  margin: 20px 100px;
+
+}
+
+.header {
+  grid-area: header;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(32, 32, 32, 0.432);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 120px;
+  margin: 0px 60px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  font-family: lato;
+}
+
+.header li {
+  margin: 50px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+/* index */
+
+.intro {
+  font-family: aboreto;
+  margin: 70px;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+
+.main {
+  margin: 50px;
+  color: white;
+  font-family: lato;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: space-evenly;
+
+
+}
+
+.cards img {
+  width: 250px;
+}
+
+.cards p {
+  font-weight: 100;
+}
+
+.cards {
+  width: 300px;
+  padding: 20px;
+  /* border: 1px solid white; */
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  color: white;
+  text-align: center;
+}
+
+.footer img {
+  margin: 0px 10px;
+}
+
+/* CARDS */
+
+.cards-one {
+  width: 90%;
+  background-color: rgba(36, 35, 38, 0.55);
+  color: white;
+  font-family: lato;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.cards-one h2 {
+  margin: 30px;
+  font-size: 30px;
+}
+
+.cards-one h3 {
+  margin: 50px;
+  font-weight: 100;
+}
+
+.cards-one img {
+  width: 300px;
+  margin: 30px;
+}
+
+
+.div-cards {
+  display: flex
+}
+
+
+/* AGENDA */
+
+.banner {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/banner-agenda.png);
+  margin: auto;
+  overflow: hidden;
+}
+
+.filter {
+  color: white;
+  font-size: 180px;
+  font-family: aboreto;
+  background-color: rgba(0, 0, 0, 0.361);
+  width: 100%;
+  line-height: 600px;
+  text-align: center;
+}
+
+.agenda-container {
+  width: 80%;
+  margin: 40px auto;
+  color: white;
+  font-family: lato;
+  display: grid;
+  grid-template-columns: 0.4fr 1.6fr;
+  grid-template-rows: 2fr repeat(5, auto);
+  gap: 0px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "refe-1 refe-2"
+    "fecha-1 descripcion-1"
+    "fecha-2 descripcion-2"
+    "fecha-3 descripcion-3"
+    "fecha-4 descripcion-4"
+    "fecha-5 descripcion-5";
+}
+
+.refe-1,
+.refe-2 {
+  padding: 10px;
+
+}
+
+.fecha-1,
+.fecha-2,
+.fecha-3,
+.fecha-4,
+.fecha-5,
+.descripcion-1,
+.descripcion-2,
+.descripcion-3,
+.descripcion-4,
+.descripcion-5 {
+  padding: 40px 20px;
+  border-top: solid white 1px;
+}
+
+.fecha-1,
+.fecha-2,
+.fecha-3,
+.fecha-4,
+.fecha-5 {
+  font-size: 14px;
+
+}
+
+.descripcion-1,
+.descripcion-2,
+.descripcion-3,
+.descripcion-4,
+.descripcion-5 {
+  font-size: 40px;
+}
+
+.fecha-1 {
+  grid-area: fecha-1;
+}
+
+.descripcion-1 {
+  grid-area: descripcion-1;
+}
+
+.fecha-2 {
+  grid-area: fecha-2;
+}
+
+.descripcion-2 {
+  grid-area: descripcion-2;
+}
+
+.fecha-3 {
+  grid-area: fecha-3;
+}
+
+.descripcion-3 {
+  grid-area: descripcion-3;
+}
+
+.fecha-4 {
+  grid-area: fecha-4;
+}
+
+.descripcion-4 {
+  grid-area: descripcion-4;
+}
+
+.fecha-5 {
+  grid-area: fecha-5;
+}
+
+.descripcion-5 {
+  grid-area: descripcion-5;
+}
+
+
+
+
+
+/* ESPACIO */
+
+.espacio {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+
+}
+
+.espacio h3 {
+  line-height: 40px;
+  font-family: aboreto;
+}
+
+.main h1 {
+  font-size: 100px;
+  margin: 40px 0px;
+  line-height: 40px;
+  font-family: aboreto;
+}
+
+.espacio-one {
+  margin: 0px;
+
+}
+
+
+
+
+
+
+/* CONTACTO */
+
+.contacto-img {
+  width: 800px;
+  margin: 10px 80px;
+  text-align: center;
+  grid-area: contacto-img;
+}
+
+.contacto-img img {
+  width: 600px;
+}
+
+.contacto-form {
+  width: 50%;
+  margin: 0px;
+}
+
+.form {
+  font-family: lato;
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-bottom: solid white 1px;
+  font-size: 20px;
+  font-weight: 100;
+  width: 600px;
+  padding: 20px;
+  grid-area: form;
+}
+
+.boton-enviar {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+  padding: 10px 20px;
+  font-family: lato;
+  font-weight: 100;
+}
+
+.comentario {
+  border: solid white 1px;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 19vh 62vh 19vh;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "contacto-img form"
+    "footer footer";
+}
+
+/* FORMACION */
+
+.main-p h1 {
+  font-family: aboreto;
+  text-align: center;
+  font-size: 100px;
+}
+
+/*  IFRAME */
+.iframe {
+  border-radius: 20px;
+}
+
+/* Mobile */
+
+@media (max-width: 1024px) {
+  /* BACKGROUND POSITION */
+
+  .background {
+    background-position: center;
+  }
+
+  /* GENERAL */
+  .header {
+    flex-direction: column;
+  }
+
+
+  .header li {
+    margin: 5px;
+  }
+
+  .header img {
+    height: 80px;
+    margin: auto;
+  }
+
+  /* AGENDA */
+  .fecha-1,
+  .fecha-2,
+  .fecha-3,
+  .fecha-4,
+  .fecha-5 {
+    font-size: 10px;
+
+  }
+
+  .descripcion-1,
+  .descripcion-2,
+  .descripcion-3,
+  .descripcion-4,
+  .descripcion-5 {
+    font-size: 20px;
+  }
+
+  .banner {
+    height: 300px;
+
+  }
+
+  .filter {
+    line-height: 300px;
+    font-size: 50px;
+
+  }
+
+  /* CONTACTO */
+
+  .contacto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 62vh 62vh 19vh;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "contacto-img"
+      "form"
+      "footer";
+  }
+
+  .contacto-img img {
+    height: 62vh;
+    width: auto;
+  }
+
+  .contacto-form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .form {
+    width: 100%;
+
+  }
+
+  /* INDEX */
+
+  .intro {
+    font-size: 20px;
+    margin: 20px;
+    line-height: 30px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  /* FOOTER */
+  .main {
+    margin: 0px;
+  }
+
+  .cards {
+    margin: 20px;
+  }
+
+  .footer img {
+    width: 40px;
+  }
+
+  /* FORMACIÓN */
+
+  .cards-one {
+    flex-direction: column;
+
+  }
+
+  .main-p h1 {
+    font-size: 30px;
+    margin: 20px;
+    font-family: aboreto;
+    text-align: center;
+  }
+
+  .cards-one h1,
+  .cards-one h2,
+  .cards-one h3 {
+    margin: 20px;
+
+  }
+
+  /* ESPACIO */
+
+  .main h1 {
+    font-size: 30px;
+    margin: 20px;
+    font-family: aboreto;
+    text-align: center;
+  }
+
+  .espacio {
+    font-size: 15px;
+    margin: 20px;
+    line-height: 25px;
+    font-family: aboreto;
+  }
+
+  .espacio-one {
+    flex-direction: column;
+  }
+
+  .espacio-one img {
+    width: 300px;
+  }
+
+}
