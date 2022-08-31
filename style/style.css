@@ -44,8 +44,9 @@
   margin: 20px 100px;
 }
 
-.nav-link:hover{
-  color: orange;transition: .3s;
+.nav-link:hover {
+  color: orange;
+  transition: .3s;
 
 }
 
@@ -63,7 +64,9 @@
   padding: 2vh;
 }
 
-.navbar-brand img { height: 5rem}
+.navbar-brand img {
+  height: 5rem
+}
 
 .bar {
   background-color: rgba(255, 255, 255, 0.3);
@@ -75,6 +78,7 @@
   text-transform: uppercase;
   letter-spacing: 10px;
 }
+
 .navbar-nav {
   text-transform: uppercase;
   font-size: 1.2vh;
@@ -92,9 +96,9 @@
 }
 
 .header {
-  
+
   grid-area: header;
-  
+
 }
 
 .header img {
@@ -145,9 +149,9 @@
   font-size: 6rem;
 }
 
-.titulo{
+.titulo {
   font-family: aboreto;
-font-size: 5rem!important;
+  font-size: 5rem !important;
 
 }
 
@@ -425,11 +429,18 @@ font-size: 5rem!important;
 
 }
 
-.imagen-grid{
+.imagen-grid {
   overflow: hidden;
+  transition: 2s;
+  
 }
 
-.texto-grid{
+
+.imagen-grid img:hover {
+  transform: scale(2);
+  transition: .5s;
+}
+.texto-grid {
   padding: 10vw;
   font-family: aboreto;
   font-size: 2rem;
@@ -437,11 +448,11 @@ font-size: 5rem!important;
 
 }
 
-.alto-grid{
+.alto-grid {
   height: 30vh;
 }
 
-.bg-grid{
+.bg-grid {
   background-image: url(../img/coral-liquido.jpg);
   background-size: cover;
   font-family: aboreto;
@@ -453,42 +464,43 @@ font-size: 5rem!important;
 
 .row {
   --bs-gutter-x: 0;
-      --bs-gutter-y: 0;
-      display: flex;
+  --bs-gutter-y: 0;
+  display: flex;
 
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
-.inscripcion{
+.inscripcion {
   font-family: josefin sans;
   font-weight: 200;
   color: white;
   font-size: 3rem;
 
 }
-.inscripcion__titulo{
-transform: rotate(-90deg);
-width: 30vh;
-text-align: center;
-}  
 
-.desc{
+.inscripcion__titulo {
+  transform: rotate(-90deg);
+  width: 30vh;
+  text-align: center;
+}
+
+.desc {
   font-family: josefin sans;
   font-size: 1rem;
   font-weight: 100;
 }
 
-.horario{
+.horario {
   font-family: josefin sans;
   font-size: 1.3rem;
   font-weight: 200;
 }
 
-.taller{
+.taller {
   font-family: aboreto;
   font-size: 2rem;
   color: white;
@@ -501,7 +513,7 @@ text-align: center;
   margin: 10px 80px;
   text-align: center;
   grid-area: contacto-img;
-  
+
 }
 
 .contacto-img img {
@@ -555,14 +567,13 @@ text-align: center;
 
 /* FORMACION */
 
-.imagen-formacion img{
+.imagen-formacion img {
   width: inherit;
+  width: 100%;
+  transition: transform 0.2s;
 }
 
-.imagen-formacion img:hover{
-  transform: scale(1.5);
-transition: .5s;
-}
+
 .main-p h1 {
   font-family: aboreto;
   text-align: center;
@@ -732,10 +743,11 @@ transition: .5s;
 
 }
 
-@media (min-width: 992px){
+@media (min-width: 992px) {
 
-.navbar-expand-lg .navbar-collapse {
-    display: flex!important;
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
     flex-basis: auto;
     justify-content: flex-end;
-}}
+  }
+}
