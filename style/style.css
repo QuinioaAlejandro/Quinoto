@@ -44,6 +44,11 @@
   margin: 20px 100px;
 }
 
+.nav-link:hover{
+  color: orange;transition: .3s;
+
+}
+
 
 .navbar a {
   color: white;
@@ -87,17 +92,9 @@
 }
 
 .header {
-  width: 100%;
+  
   grid-area: header;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(32, 32, 32, 0.432);
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  
 }
 
 .header img {
@@ -433,6 +430,7 @@ font-size: 5rem!important;
 }
 
 .texto-grid{
+  padding: 10vw;
   font-family: aboreto;
   font-size: 2rem;
   color: white;
@@ -499,7 +497,7 @@ text-align: center;
 /* CONTACTO */
 
 .contacto-img {
-  width: 800px;
+
   margin: 10px 80px;
   text-align: center;
   grid-area: contacto-img;
@@ -561,11 +559,17 @@ text-align: center;
   width: inherit;
 }
 
+.imagen-formacion img:hover{
+  transform: scale(1.5);
+transition: .5s;
+}
 .main-p h1 {
   font-family: aboreto;
   text-align: center;
   font-size: 100px;
 }
+
+
 
 /*  IFRAME */
 .iframe {
