@@ -455,14 +455,27 @@ font-size: 5rem!important;
   --bs-gutter-x: 0;
       --bs-gutter-y: 0;
       display: flex;
-      flex-wrap: wrap;
+
+      flex-wrap: nowrap;
+
   margin-top: 0;
   margin-right: 0;
   margin-left: 0;
 }
 
+.inscripcion{
+  font-family: josefin sans;
+  font-weight: 200;
+  color: white;
+  font-size: 3rem;
 
+}
+.inscripcion__titulo{
+transform: rotate(-90deg);
+width: 30vh;
+text-align: center;
 
+}  
 
 /* CONTACTO */
 
