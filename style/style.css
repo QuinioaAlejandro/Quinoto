@@ -58,6 +58,8 @@
   padding: 2vh;
 }
 
+.navbar-brand img { height: 5rem}
+
 .bar {
   background-color: rgba(255, 255, 255, 0.3);
   z-index: 1;
@@ -445,7 +447,7 @@ font-size: 5rem!important;
   background-image: url(../img/coral-liquido.jpg);
   background-size: cover;
   font-family: aboreto;
-  font-size: 10rem;
+  font-size: 10vh;
   color: black;
   line-height: 65vh;
   text-align: center;
@@ -554,6 +556,10 @@ text-align: center;
 }
 
 /* FORMACION */
+
+.imagen-formacion img{
+  width: inherit;
+}
 
 .main-p h1 {
   font-family: aboreto;
@@ -721,3 +727,11 @@ text-align: center;
   }
 
 }
+
+@media (min-width: 992px){
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;
+}}
