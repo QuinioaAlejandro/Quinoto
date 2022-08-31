@@ -474,8 +474,25 @@ font-size: 5rem!important;
 transform: rotate(-90deg);
 width: 30vh;
 text-align: center;
-
 }  
+
+.desc{
+  font-family: josefin sans;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.horario{
+  font-family: josefin sans;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.taller{
+  font-family: aboreto;
+  font-size: 2rem;
+  color: white;
+}
 
 /* CONTACTO */
 
