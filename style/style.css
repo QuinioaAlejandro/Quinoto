@@ -25,6 +25,7 @@
 }
 
 
+
 .background {
   background-color: black;
   /* background-image: url(../img/coral\ tonos\ \ violeta\ y\ blanco.png); */
@@ -41,7 +42,6 @@
 
 .main-p h1 {
   color: white;
-  margin: 20px 100px;
 }
 
 .nav-link:hover {
@@ -138,7 +138,7 @@
 /* index */
 
 .main-index {
-  background-image: url(../img/espacio.jpg);
+  background-image: url(../img/index-qionoto.jpg);
   background-repeat: no-repeat;
   height: 100vh;
   font-family: aboreto;
@@ -587,6 +587,11 @@
   border-radius: 20px;
 }
 
+/* FOOTER */
+
+.footer p{
+  margin: 0;
+}
 /* Mobile */
 
 @media (max-width: 1024px) {
