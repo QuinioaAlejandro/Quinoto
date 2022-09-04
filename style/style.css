@@ -510,7 +510,7 @@
 
 .contacto-img {
 
-  margin: 10px 80px;
+  margin: 0px 80px;
   text-align: center;
   grid-area: contacto-img;
 
@@ -521,12 +521,15 @@
 }
 
 .contacto-form {
-  padding-top: 13vh;
+  padding-top: 19vh;
   width: 50%;
   margin: 0px;
 }
-
+.altura-form{
+  height: 15vw;
+}
 .form {
+
   font-family: lato;
   background-color: black;
   color: white;
