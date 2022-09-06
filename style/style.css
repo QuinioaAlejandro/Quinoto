@@ -64,6 +64,8 @@
   padding: 2vh;
 }
 
+
+
 .navbar-brand img {
   height: 5rem
 }
@@ -89,6 +91,7 @@
   border: solid 1px white;
   font-size: 1.2vh;
   --bs-dropdown-link-active-bg: transparent;
+
 }
 
 .dropdown-item:hover {
@@ -136,6 +139,31 @@
 }
 
 /* index */
+
+
+.main-index-formacion {
+  background-image: url(../img/formacion-qionoto.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: aboreto;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 6rem;
+}
+
+.main-index-espacio {
+  background-image: url(../img/espacio.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: aboreto;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 6rem;
+}
 
 .main-index {
   background-image: url(../img/index-qionoto.jpg);
@@ -432,7 +460,7 @@
 .imagen-grid {
   overflow: hidden;
   transition: 2s;
-  
+
 }
 
 
@@ -440,10 +468,11 @@
   transform: scale(2);
   transition: .5s;
 }
+
 .texto-grid {
   padding: 10vw;
   font-family: aboreto;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: white;
 
 }
@@ -525,9 +554,11 @@
   width: 50%;
   margin: 0px;
 }
-.altura-form{
+
+.altura-form {
   height: 15vw;
 }
+
 .form {
 
   font-family: lato;
@@ -593,9 +624,10 @@
 
 /* FOOTER */
 
-.footer p{
+.footer p {
   margin: 0;
 }
+
 /* Mobile */
 
 @media (max-width: 1024px) {
