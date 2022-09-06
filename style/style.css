@@ -153,16 +153,10 @@
   font-size: 6rem;
 }
 
-.main-index-espacio {
+.espacio {
   background-image: url(../img/espacio.jpg);
   background-repeat: no-repeat;
-  height: 100vh;
-  font-family: aboreto;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  font-weight: 100;
-  font-size: 6rem;
+ 
 }
 
 .main-index {
@@ -538,7 +532,7 @@
 /* CONTACTO */
 
 .contacto-img {
-
+height: 75vh;
   margin: 0px 80px;
   text-align: center;
   grid-area: contacto-img;
@@ -590,7 +584,7 @@
 .contacto {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 19vh 62vh 19vh;
+  grid-template-rows: 15vh auto 10vh;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -630,7 +624,7 @@
 
 /* Mobile */
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   /* BACKGROUND POSITION */
 
   .background {
@@ -686,7 +680,7 @@
   .contacto {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto 62vh 62vh 19vh;
+    grid-template-rows: auto auto auto auto;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -697,12 +691,19 @@
       "footer";
   }
 
+  .contacto-img{
+    height: auto;
+    padding-top: 16vh;
+   margin: 0;
+  }
+
   .contacto-img img {
-    height: 62vh;
-    width: auto;
+ 
+    width: 100%;
   }
 
   .contacto-form {
+    padding: 5vh 0;
     width: 90%;
     margin: auto;
   }
