@@ -153,8 +153,8 @@
   font-size: 6rem;
 }
 
-.espacio {
-  background-image: url(../img/espacio.jpg);
+.sp {
+  background-image: url(../img/espacio.jpg)!important;
   background-repeat: no-repeat;
  
 }
