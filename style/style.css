@@ -140,23 +140,17 @@
 
 /* index */
 
-
-.main-index-formacion {
-  background-image: url(../img/formacion-qionoto.png);
+.fcion {
+  background-image: url(../img/formacion-qionoto.png)!important;
   background-repeat: no-repeat;
-  height: 100vh;
-  font-family: aboreto;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  font-weight: 100;
-  font-size: 6rem;
+  background-size: 110%;
 }
+
 
 .sp {
   background-image: url(../img/espacio.jpg)!important;
   background-repeat: no-repeat;
- 
+
 }
 
 .main-index {
