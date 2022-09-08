@@ -1,0 +1,38 @@
+.agenda-container {
+    width: 80%;
+    margin: 40px auto;
+    color: white;
+    font-family: lato;
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 2fr repeat(5, auto);
+    gap: 0 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "refe-1 refe-2" "fecha-1 descripcion-1" "fecha-2 descripcion-2" "fecha-3 descripcion-3" "fecha-4 descripcion-4" "fecha-5 descripcion-5";
+    &__refe-1 {
+        padding: 10px;
+    }
+    &__refe-2 {
+        padding: 10px;
+    }
+    &__fecha-1{@extend %agenda; font-size: 14px; grid-area: fecha-1;
+    }
+    &__fecha-2{@extend %agenda; font-size: 14px; grid-area: fecha-2;;
+    }
+    &__fecha-3{@extend %agenda; font-size: 14px; grid-area: fecha-3;
+    }
+    &__fecha-4{@extend %agenda; font-size: 14px; grid-area: fecha-4;
+    }
+    &__fecha-5{@extend %agenda; font-size: 14px; grid-area: fecha-5;
+    }
+    &__descripcion-1{@extend %agenda; font-size: 14px; grid-area: descripcion-1;
+    }
+    &__descripcion-2{@extend %agenda; font-size: 14px; grid-area: descripcion-2;;
+    }
+    &__descripcion-3{@extend %agenda; font-size: 14px; grid-area: descripcion-3;
+    }
+    &__descripcion-4{@extend %agenda; font-size: 14px; grid-area: descripcion-4;
+    }
+    &__descripcion-5{@extend %agenda; font-size: 14px; grid-area: descripcion-5;
+    }
+}

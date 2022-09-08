@@ -1,0 +1,12 @@
+//extend//
+%agenda{ padding: 40px 20px;
+border-top: solid white 1px;
+}
+
+//mixin//
+@mixin estilo-de-texto($size, $weigth){
+    color: white;
+    font-family: josefin sans;
+    font-size: $size;
+    font-weight: $weigth;
+}
