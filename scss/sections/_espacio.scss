@@ -1,6 +1,57 @@
-.alto-grid {
-    height: 30vh;
-    &__imagen {
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas: "espacio1 espacio2 espacio3" "espacio4 espacio-anemona espacio-anemona" "espacio5 espacio6 epacio7" "mapa mapa mapa";
+}
+
+.espacio1 {
+    grid-area: espacio1;
+    overflow: hidden;
+}
+
+.espacio2 {
+    grid-area: espacio2;
+}
+
+.espacio3 {
+    grid-area: espacio3;
+    overflow: hidden;
+}
+
+.espacio4 {
+    grid-area: espacio4;
+}
+
+.espacio-anemona {
+    grid-area: espacio-anemona;
+}
+
+.espacio5 {
+    grid-area: espacio5;
+    overflow: hidden;
+}
+
+.espacio6 {
+    grid-area: espacio6;
+    overflow: hidden;
+}
+
+.epacio7 {
+    grid-area: epacio7;
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+
+.grid-e {
+    width: 100%;
+    margin: 0;
+    &__espacio {
         overflow: hidden;
         transition: 2s;
         img:hover {
@@ -9,11 +60,76 @@
         }
 
     }
-    &__texto-grid {
-        padding: 10vw;
-        font-family: aboreto;
-        font-size: 1.4rem;
-        color: white;
 
+
+    .grid-e {
+        margin: 0;
+        width: 100%;
+        &__texto-grid {
+            p {
+                text-transform: uppercase;
+                color: white;
+                padding: 12vw;
+                font-family: aboreto;
+                font-size: 1.3rem;
+                color: white;
+            }
+        }
     }
+}
+.grid-container {
+    &__bg-grid {
+        width: 2fr;
+        background-image: url('../img/coral-liquido.jpg');
+        background-size: cover;
+        font-family: aboreto;
+        font-size: 10vh;
+        color: black;
+        line-height: 65vh;
+        text-align: center;
+    }
+}
+
+.iframe {
+    margin: 0;
+    width: 100%;
+
+}
+
+
+@media(max-width: 992px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0 0;
+        grid-auto-flow: row;
+        grid-template-areas: 
+        "espacio1"
+        "espacio2"
+        "espacio3"
+        "espacio4"
+        "espacio-anemona" 
+        "espacio5"
+        "espacio6"
+        "espacio7" 
+        "mapa";
+    }
+.grid-e{ 
+    &__alto-grids
+img{
+    width: 100%;
+}
+}
+
+.grid-e {
+    
+    &__texto-grid {
+        p {
+            padding: 50%;
+   
+        }
+    }
+}
 }

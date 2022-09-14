@@ -1,3 +1,4 @@
+
 /* variables */
 @import "./variables/colores";
 
@@ -15,6 +16,8 @@
 
 @import "./sections/agenda";
 
+@import "./sections/formacion";
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100;1,300&family=Pontano+Sans&family=Yeseva+One&display=swap');
@@ -30,6 +33,10 @@
     box-sizing: border-box;
 
 }
+
+
+
+
 
 /* google icons */
 
@@ -166,16 +173,7 @@
 }
 
 
-.evento-1 {
-    padding: 2rem 0 2rem 7rem;
-    color: white;
-    height: 50vh;
-    width: 50%;
-    background-image: url('../img/equipo-f.png');
-    background-position: right;
-    background-size: 50%;
-    background-repeat: no-repeat;
-}
+
 
 .evento-1 h3 {
     font-family: aboreto;
@@ -196,37 +194,6 @@
 
 /* CARDS */
 
-.cards-one {
-    width: 90%;
-    background-color: rgba(36, 35, 38, 0.55);
-    color: white;
-    font-family: lato;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 30px auto;
-    align-items: center;
-}
-
-.cards-one h2 {
-    margin: 30px;
-    font-size: 30px;
-}
-
-.cards-one h3 {
-    margin: 50px;
-    font-weight: 100;
-}
-
-.cards-one img {
-    width: 300px;
-    margin: 30px;
-}
-
-
-.div-cards {
-    display: flex
-}
 
 
 /* AGENDA */
@@ -254,12 +221,6 @@
 
 /* ESPACIO */
 
-.espacio {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 100%;
-
-}
 
 .espacio h3 {
     line-height: 40px;
@@ -278,25 +239,9 @@
 
 }
 
-.bg-grid {
-    background-image: url('../img/coral-liquido.jpg');
-    background-size: cover;
-    font-family: aboreto;
-    font-size: 10vh;
-    color: black;
-    line-height: 65vh;
-    text-align: center;
-}
 
-.row {
-    --bs-gutter-x: 0;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 0;
-}
+
+
 
 .inscripcion {
     font-family: josefin sans;
@@ -312,17 +257,8 @@
     text-align: center;
 }
 
-.desc {
-    font-family: josefin sans;
-    font-size: 1rem;
-    font-weight: 100;
-}
 
-.horario {
-    font-family: josefin sans;
-    font-size: 1.3rem;
-    font-weight: 200;
-}
+
 
 .taller {
     font-family: aboreto;
@@ -345,24 +281,9 @@
 
 /* FORMACION */
 
-.imagen-formacion img {
-    width: inherit;
-    width: 100%;
-    transition: transform 0.2s;
-}
-
-
-.main-p h1 {
-    font-family: aboreto;
-    text-align: center;
-    font-size: 100px;
-}
 
 
 /*  IFRAME */
-.iframe {
-    border-radius: 20px;
-}
 
 /* FOOTER */
 
@@ -480,19 +401,14 @@
         width: 40px;
     }
 
-    /* FORMACIÓN */
+
 
     .cards-one {
         flex-direction: column;
 
     }
 
-    .main-p h1 {
-        font-size: 30px;
-        margin: 20px;
-        font-family: aboreto;
-        text-align: center;
-    }
+    
 
     .cards-one h1,
     .cards-one h2,

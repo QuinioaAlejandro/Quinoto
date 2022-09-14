@@ -1,4 +1,3 @@
-
 .main-index {
     background-image: url('../img/index-qionoto.jpg');
     background-repeat: no-repeat;
@@ -18,9 +17,17 @@
         background-repeat: no-repeat;
     }
     &--fcion {
-        background-image: url('../img/formacion-qionoto.png') !important;
+        background-image: url('../img/img-formacion.png') !important;
         background-repeat: no-repeat;
-        background-size: 110%;
+    }
+}
+.slider {
+    &__encabezado {
+        text-align: center;
+        padding-bottom: 3vh;
+        font-family: aboreto;
+        font-size: 1.7rem;
+        color: white;
     }
 }
 
@@ -49,7 +56,7 @@
         background-color: rgba(0, 0, 0, 0.4);
         p {
             @include estilo-de-texto(1.2rem, 100);
-            }
+        }
 
         img {
             width: 250px;
@@ -62,11 +69,118 @@
     }
 }
 
-.slider {
-    &__encabezado {
-        padding: 4rem 0 2rem 7rem;
-        font-family: josefin sans;
-        font-size: 2rem;
-        color: white;
+
+.evento-1 {
+    padding: 2rem 0 2rem 7rem;
+    color: white;
+    height: 50vh;
+    width: 50%;
+    background-image: url('../img/equipo-f.png');
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.cards-one {
+    width: 90%;
+    background-color: rgba(36, 35, 38, 0.55);
+    color: white;
+    font-family: lato;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.cards-one {
+    h2 {
+        margin: 30px;
+        font-size: 30px;
     }
 }
+
+.cards-one {
+    h3 {
+        margin: 50px;
+        font-weight: 100;
+    }
+}
+
+.cards-one {
+    img {
+        width: 300px;
+        margin: 30px;
+    }
+}
+
+
+.div-cards {
+    display: flex
+}
+
+
+@media(max-width: 992px) {
+    .main {
+        &__cards {
+            margin: 1vh;
+            p{
+                display: none;
+            }
+            img {
+                width: 100%;
+            }
+
+        }
+    }
+
+    .main-index {
+        height: 60vh;
+
+        &--sp {
+            background-size: cover;
+        }
+        &--fcion {
+            background-size: auto 100%;
+        }
+
+        .evento-1 {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+    .main-index {
+        h1 {
+            padding-top: 35vh;
+            font-size: 2rem !important;
+            margin: 0;
+            font-family: aboreto;
+            text-align: center;
+        }
+    }
+
+    .main {
+        &__main-intro {
+            padding-top: 5vh;
+            font-size: 2rem;
+            font-family: aboreto;
+            line-height: 2.4rem;
+            font-weight: 100;
+        }
+    }
+
+    .evento-1 {
+        background-size: cover;
+        padding: 0;
+        width: 100%;
+        p{
+            padding:  0 6vh;
+        }
+    }
+
+   
+    
+
+}
+

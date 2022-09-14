@@ -1,0 +1,94 @@
+.cursos {
+    display: flex;
+    flex-direction: column
+}
+
+.alto-grids {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+
+.texto-grid {
+    &__horario {
+        font-family: josefin sans;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+}
+
+
+.imagen-formacion img {
+    width: inherit;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+
+.main-p {
+    h1 {
+        font-family: aboreto;
+        text-align: center;
+        font-size: 100px;
+    }
+}
+
+@media(max-width: 992px) {
+    .texto-grid {
+        &__horario {
+            color: white !important;
+            font-family: josefin sans;
+            font-size: 1rem;
+            font-weight: 200;
+        }
+        &__desc {
+            color: white;
+            font-family: josefin sans;
+            font-size: 1rem;
+            font-weight: 100;
+        }
+    }
+    .alto-grids {
+        flex-direction: column;
+    }
+
+    .main-p {
+        h1 {
+            font-size: 3rem !important;
+            margin: 0;
+            font-family: aboreto;
+            text-align: center;
+        }
+    }
+    .alto-grids {
+
+    
+        &__taller{           
+            color: white;
+            font-family: josefin sans;
+        }
+
+        &__texto-grid{     
+            text-align: center; 
+            width: 100%;     
+            color: white;
+            font-family: josefin sans;
+        }
+
+        &__imagen-formacion {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .slider{
+        &__encabezado{
+            h2{
+         margin: 0;
+            }
+        }
+    }
+}
