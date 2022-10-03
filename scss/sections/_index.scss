@@ -22,6 +22,7 @@
     }
 }
 .slider {
+    margin-top: 10rem;
     &__encabezado {
         text-align: center;
         padding-bottom: 3vh;
@@ -32,7 +33,8 @@
 }
 
 .main {
-    margin: 50px;
+    width: 95%;
+    margin: auto;
     color: white;
     font-family: lato;
     font-size: 20px;
@@ -41,45 +43,97 @@
     flex-flow: row wrap;
     align-content: center;
     justify-content: space-evenly;
-    &__intro {
-        font-family: aboreto;
-        margin: 70px;
-        font-weight: 100;
-        font-size: 4rem;
-        line-height: 4rem;
-    }
     &__cards {
-        width: 300px;
-        padding: 20px;
-        /* border: 1px solid white; */
+        width: 23%;
+        padding: 3%;
         border-radius: 15px;
         background-color: rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        h3 {
+            font-family: aboreto;
+            text-transform:uppercase;
+            text-align:left;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
         p {
             @include estilo-de-texto(1.2rem, 100);
+            line-height: 120%;
+            text-align:left;
         }
 
         img {
             width: 250px;
             transition: transform 0.2s;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.6);
                 transition: .2;
             }
         }
     }
 }
 
+.intro {
+    font-family: aboreto;
+    width: 90%;
+    margin: auto;
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 4rem;
+    color: white;
+    padding: 30vh 0vh;
+}
 
-.evento-1 {
+
+.eventos {
+    display: flex;
+    flex-flow: row wrap;
+    h3 {
+        font-family: aboreto;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    p {
+        width: 50%;
+        font-size: 1.1rem;
+        line-height: 120%;
+        font-family: josefin sans;
+        font-weight: 100;
+    }
+    &__uno {
     padding: 2rem 0 2rem 7rem;
     color: white;
     height: 50vh;
     width: 50%;
-    background-image: url('../img/equipo-f.png');
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    &--e1 {
+        background-image: url(../../img/imagen-evento.jpg);       
+    }
+}
+
+&__dos {
+    padding: 2rem 0 2rem 7rem;
+    color: white;
+    height: 50vh;
+    width: 50%;
     background-position: right;
     background-size: 50%;
     background-repeat: no-repeat;
 }
+&__boton {
+    background:transparent; 
+    color: yellow; 
+    text-transform: uppercase; 
+    font-family: aboreto;
+    letter-spacing: 0.6rem;
+    border: 0;
+
+}
+}
+
 
 .cards-one {
     width: 90%;
@@ -122,11 +176,12 @@
 
 @media(max-width: 992px) {
     .main {
+        flex-flow: column;
         &__cards {
-            margin: 1vh;
-            p{
-                display: none;
-            }
+            width: 90%;
+            margin: auto;
+            padding: 2rem;
+            margin-top: 2rem;
             img {
                 width: 100%;
             }
@@ -135,7 +190,7 @@
     }
 
     .main-index {
-        height: 60vh;
+        height: 100vh;
 
         &--sp {
             background-size: cover;
@@ -151,32 +206,34 @@
         }
     }
     .main-index {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
         h1 {
-            padding-top: 35vh;
-            font-size: 2rem !important;
+            padding-top: 0;
+            font-size: 8vh !important;
             margin: 0;
             font-family: aboreto;
             text-align: center;
         }
     }
 
-    .main {
-        &__main-intro {
-            padding-top: 5vh;
+    .intro {
+            padding: 5vh;
             font-size: 2rem;
             font-family: aboreto;
             line-height: 2.4rem;
             font-weight: 100;
         }
-    }
 
-    .evento-1 {
-        background-size: cover;
-        padding: 0;
-        width: 100%;
-        p{
-            padding:  0 6vh;
-        }
+    .eventos {
+        &__dos {display: none;}
+        &__uno {width: 100%;
+        padding: 3rem;
+    p {
+        width: 90%;
+    }}
     }
 
    

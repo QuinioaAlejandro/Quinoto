@@ -36,3 +36,14 @@
     &__descripcion-5{@extend %agenda; font-size: 14px; grid-area: descripcion-5;
     }
 } 
+
+@media (max-width:992px) {
+    .banner {
+        height: 100vh;
+        &__filter {
+            line-height: 300px;
+            font-size: 2rem;
+        }
+
+    }
+}

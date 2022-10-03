@@ -1,8 +1,9 @@
 
 /* variables */
 @import "./variables/colores";
-
+@import "./variables/typo";
 @import "./variables/extend";
+
 
 /* sections */
 
@@ -18,14 +19,6 @@
 
 @import "./sections/formacion";
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&family=Quicksand:wght@300;400;500;600;700&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,100;1,300&family=Pontano+Sans&family=Yeseva+One&display=swap');
-
-/* josefin sans */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-
 /* GENERAL */
 * {
     margin: 0;
@@ -34,7 +27,22 @@
 
 }
 
-
+/* width */
+::-webkit-scrollbar {
+    width: .7rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: green;
+  }
+  
+ 
 
 
 
@@ -268,17 +276,6 @@
 
 /* CONTACTO */
 
-
-.contacto {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15vh auto 10vh;
-    grid-auto-columns: 1fr;
-    gap: 0 0;
-    grid-auto-flow: row;
-    grid-template-areas: "header header" "contacto-img form" "footer footer";
-}
-
 /* FORMACION */
 
 
@@ -333,14 +330,6 @@
         font-size: 20px;
     }
 
-    .banner {
-        height: 300px;
-        &__filter {
-            line-height: 300px;
-            font-size: 50px;
-        }
-
-    }
 
 
     /* CONTACTO */

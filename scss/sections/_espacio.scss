@@ -1,135 +1,134 @@
-.grid-container {
+.grid {
+    width:99.9%;
+    margin:auto;
+    margin-bottom: 9vh;
+  &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0 0;
+    grid-template-rows: 70vh 70vh 70vh 70vh;
     grid-auto-flow: row;
-    grid-template-areas: "espacio1 espacio2 espacio3" "espacio4 espacio-anemona espacio-anemona" "espacio5 espacio6 epacio7" "mapa mapa mapa";
-}
+    align-content: center;
+    align-items: stretch;
+    grid-template-areas:
+      "espacio1 espacio2 espacio3"
+      "espacio4 espacio5 espacio5"
+      "espacio6 espacio7 espacio8"
+      "mapa mapa mapa";
+  }
 
-.espacio1 {
+  &__espacio1 {
     grid-area: espacio1;
     overflow: hidden;
-}
+  }
 
-.espacio2 {
+  &__espacio2 {
     grid-area: espacio2;
-}
+  }
 
-.espacio3 {
+  &__espacio3 {
     grid-area: espacio3;
     overflow: hidden;
-}
+  }
 
-.espacio4 {
+  &__espacio4 {
     grid-area: espacio4;
-}
+  }
 
-.espacio-anemona {
-    grid-area: espacio-anemona;
-}
-
-.espacio5 {
+  &__espacio5 {
     grid-area: espacio5;
-    overflow: hidden;
-}
+  }
 
-.espacio6 {
+  &__espacio6 {
     grid-area: espacio6;
     overflow: hidden;
-}
+  }
 
-.epacio7 {
-    grid-area: epacio7;
-}
+  &__espacio7 {
+    grid-area: espacio7;
+    overflow: hidden;
+  }
 
-.mapa {
+  &__espacio8 {
+    grid-area: espacio8;
+  }
+
+  &__mapa {
     grid-area: mapa;
-}
-
-
-.grid-e {
-    width: 100%;
-    margin: 0;
-    &__espacio {
-        overflow: hidden;
-        transition: 2s;
-        img:hover {
-            transform: scale(2);
-            transition: 0.5s;
-        }
-
+    iframe {
+        filter: hue-rotate(90deg) brightness(90%)
     }
+  }
 
-
-    .grid-e {
-        margin: 0;
-        width: 100%;
-        &__texto-grid {
-            p {
-                text-transform: uppercase;
-                color: white;
-                padding: 12vw;
-                font-family: aboreto;
-                font-size: 1.3rem;
-                color: white;
-            }
-        }
+  &__img {
+    overflow:hidden;
+    height: 70vh;
+    img {
+        height: 100%;
+        transition: height 1s;
     }
+    img:hover {
+        height: 200%;
+        transition: height 1s;}
+  }
+
+  &--text {
+    color: white;
+    font-family: aboreto;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 0vh 4vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &--anemona {
+    background-image: url(../../img/coral-liquido.jpg);
+    color: white;
+    font-family: aboreto;
+    text-transform:uppercase;
+    font-size: 15vh;
+    text-align:center;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
-.grid-container {
-    &__bg-grid {
-        width: 2fr;
-        background-image: url('../img/coral-liquido.jpg');
-        background-size: cover;
-        font-family: aboreto;
-        font-size: 10vh;
-        color: black;
-        line-height: 65vh;
-        text-align: center;
+
+@media(max-width: 992px)  
+{
+    .grid {
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80vh 80vh 80vh 80vh 80vh 80vh 100vh;
+            grid-auto-flow: row;
+            align-content: center;
+            align-items: stretch;
+            grid-template-areas:
+              "espacio2"
+              "espacio3"
+              "espacio4"
+              "espacio6"
+              "espacio7"
+              "espacio8"
+              "mapa";
+          }
+          &__espacio1{
+            display:none;
+          }
+          &__espacio5 {
+            display:none;
+          }
+          &__img {
+            height: 80vh;
+          }
+          &--text {
+            padding: 0vh 10vw;
+            height: 80vh;
+          }
     }
-}
-
-.iframe {
-    margin: 0;
-    width: 100%;
-
-}
-
-
-@media(max-width: 992px) {
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0 0;
-        grid-auto-flow: row;
-        grid-template-areas: 
-        "espacio1"
-        "espacio2"
-        "espacio3"
-        "espacio4"
-        "espacio-anemona" 
-        "espacio5"
-        "espacio6"
-        "espacio7" 
-        "mapa";
-    }
-.grid-e{ 
-    &__alto-grids
-img{
-    width: 100%;
-}
-}
-
-.grid-e {
-    
-    &__texto-grid {
-        p {
-            padding: 50%;
-   
-        }
-    }
-}
 }

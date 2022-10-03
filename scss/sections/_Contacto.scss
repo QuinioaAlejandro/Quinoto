@@ -1,4 +1,12 @@
-
+.contacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15vh auto 10vh;
+    grid-auto-columns: 1fr;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "contacto-img form" "footer footer";
+}
 
 .contacto-img {
     height: 75vh;
@@ -13,23 +21,21 @@
 
 .contacto-form {
     padding-top: 19vh;
-    width: 50%;
     margin: 0;
-
+    input::placeholder {
+        color: white;
+    }
     &__altura-form {
         height: 15vw;
     }
 
     &__form {
-
-        font-family: lato;
-        background-color: black;
+        font-family: josefin sans;
+        background-color: purple;
         color: white;
         border: 0;
-        border-bottom: solid white 1px;
         font-size: 20px;
-        font-weight: 100;
-        width: 600px;
+        width: 80%;
         padding: 20px;
         grid-area: form;
     }
@@ -38,14 +44,21 @@
         font-size: 20px;
         background-color: black;
         color: white;
-        border: solid white 1px;
+        border: 0;
         padding: 10px 20px;
-        font-family: lato;
-        font-weight: 100;
+        font-family: josefin sans;
+        text-transform: uppercase;
     }
 
     &__comentario {
-        border: solid white 1px;
+        background-color: red;
     }
 
+}
+
+@media (max-width:992px){
+    .contacto-form {
+        width: 100%;
+        &__form {width: 100%;}
+    }
 }
