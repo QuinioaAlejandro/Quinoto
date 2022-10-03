@@ -368,7 +368,7 @@
     display: flex;
     align-items: center; }
   .grid--anemona {
-    background-image: url(../../img/coral-liquido.jpg);
+    background-image: url(../img/coral-liquido.jpg);
     color: white;
     font-family: aboreto;
     text-transform: uppercase;
