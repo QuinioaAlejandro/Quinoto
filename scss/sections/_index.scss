@@ -1,4 +1,5 @@
 .main-index {
+    justify-content: center;
     background-image: url('../img/index-qionoto.jpg');
     background-repeat: no-repeat;
     height: 100vh;
@@ -20,6 +21,11 @@
         background-image: url('../img/img-formacion.png') !important;
         background-repeat: no-repeat;
     }
+    &--ag {
+        background-image: url('../img/banner-agenda.png') !important;
+        background-repeat: no-repeat;
+    }
+
 }
 .slider {
     margin-top: 10rem;
@@ -89,6 +95,7 @@
 .eventos {
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 7vh;
     h3 {
         font-family: aboreto;
         text-transform: uppercase;
@@ -102,35 +109,55 @@
         font-weight: 100;
     }
     &__uno {
-    padding: 2rem 0 2rem 7rem;
+    padding: 2rem 0rem;
+    margin-left: 10%;
     color: white;
     height: 50vh;
-    width: 50%;
+    width: 40%;
     background-position: right;
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat;
     &--e1 {
-        background-image: url(../../img/imagen-evento.jpg);       
+        background-image: url('../img/evento2.jpg');       
+    }
+    &--e2 {
+        background-image: url('../img/evento3.jpg');       
+    }
+    &--e3 {
+        background-image: url('../img/evento4.jpg');       
     }
 }
 
 &__dos {
-    padding: 2rem 0 2rem 7rem;
+    padding: 2rem 0 2rem 5rem;
+    margin-right: 10%;
     color: white;
     height: 50vh;
-    width: 50%;
+    width: 40%;
     background-position: right;
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat;
+    &--e1 {
+        background-image: url(../img/evento5.jpg);       
+    }
+    &--e2 {
+        background-image: url(../img/evento6.png);       
+    }
+    &--e3 {
+        background-image: url(../img/evento7.png);       
+    }
 }
 &__boton {
+
     background:transparent; 
-    color: yellow; 
     text-transform: uppercase; 
     font-family: aboreto;
     letter-spacing: 0.6rem;
     border: 0;
-
+a{
+    color: yellow; 
+    text-decoration: none!important;
+}
 }
 }
 

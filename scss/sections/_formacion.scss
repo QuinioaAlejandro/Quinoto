@@ -6,24 +6,56 @@
 .alto-grids {
     display: flex;
     flex-flow: row wrap;
-
-}
-
-
-.texto-grid {
-    &__horario {
-        font-family: josefin sans;
-        font-size: 1.3rem;
-        font-weight: 200;
+    width: 98%;
+    margin: auto;
+    align-items: center;
+    &__taller {
+        font-family: aboreto;
+        font-size: 2rem;
+        color: white;
+        padding: 0 5rem;
+    }
+    &__img {
+        text-align:center;
     }
 }
 
 
-.imagen-formacion img {
-    width: inherit;
-    width: 100%;
-    transition: transform 0.2s;
+
+.texto-grid {
+    padding: 0rem 5rem 0rem 0rem;
+    &__horario {
+        font-family: josefin sans;
+        font-size: 0.7rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        background-color: black;
+        padding: 1rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span {
+            font-size: 3rem;
+            color: rgb(255, 240, 130);
+        }
+        p {
+            margin-bottom: 0rem;}
+        b {
+            color: $coral;
+            font-size: 0.9rem;
+        }
+    }
+    &__desc {
+        color: white; 
+        font-family: josefin sans;
+        font-weight: 100;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
 }
+
 
 
 .main-p {
@@ -50,7 +82,22 @@
         }
     }
     .alto-grids {
-        flex-direction: column;
+       &__img {
+        width: 100%;
+        img {width: 100%;}
+    }
+    &__taller {
+        padding: 0rem 2rem;}
+    }
+    
+    .texto-grid {
+        width: 100%;
+        padding: 0rem 2rem;
+        &__horario {
+            margin-top: 1rem; 
+            margin-bottom: 0.9rem;
+            span {display: none;}
+        }
     }
 
     .main-p {
@@ -59,36 +106,6 @@
             margin: 0;
             font-family: aboreto;
             text-align: center;
-        }
-    }
-    .alto-grids {
-
-    
-        &__taller{           
-            color: white;
-            font-family: josefin sans;
-        }
-
-        &__texto-grid{     
-            text-align: center; 
-            width: 100%;     
-            color: white;
-            font-family: josefin sans;
-        }
-
-        &__imagen-formacion {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    .slider{
-        &__encabezado{
-            h2{
-         margin: 0;
-            }
         }
     }
 }

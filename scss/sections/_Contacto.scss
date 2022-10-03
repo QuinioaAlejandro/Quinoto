@@ -30,6 +30,7 @@
     }
 
     &__form {
+        font-weight: 100;
         font-family: josefin sans;
         background-color: purple;
         color: white;
@@ -51,7 +52,7 @@
     }
 
     &__comentario {
-        background-color: red;
+        background-color: rgb(32, 8, 62);
     }
 
 }

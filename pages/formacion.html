@@ -10,6 +10,8 @@
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- css -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Espacio quinoto</title>
@@ -21,7 +23,7 @@
         <header>
             <nav class="navbar navbar-expand-lg bar">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"><img src="../img/QuinotoP.png" alt="quinoto"></a>
+                    <a class="navbar-brand" href="../index.html"><img src="../img/QuinotoP.png" alt="quinoto" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,20 +32,19 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./espacio.html">El
-                                    Espacio</a>
+                                <a class="nav-link" aria-current="page" href="./espacio.html">El Espacio</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Nosotros
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./agenda.html">Agenda</a></li>
-                                    <li><a class="dropdown-item" href="./formacion.html">formación</a></li>
-                                    <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./agenda.html">Agenda</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link  nav-link--active" aria-current="page"
+                                    href="./formacion.html">Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./Contacto.html">Contacto</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -52,139 +53,151 @@
 
         <main class="main-p">
             <section class="main-index main-index--fcion">
-                <h1 class="titulo">
-                    Formación
+                <h1 class="main-index--titulo">
+                    <br><br> Formación
                 </h1>
             </section>
-<div class="cursos">
-            <section class="row alto-grids">
+            <div class="cursos">
+                <section class="row alto-grids">
 
-                <article class="col-5 alto-grids__imagen-formacion">
-                    <img src="../img/for1.png" alt="campo rosa">
-                </article>
+                    <article class="col-4 alto-grids__img">
+                        <img src="../img/for1.png" alt="campo rosa">
+                    </article>
 
-                <article class="col-2 alto-grids__taller">
-                    <p>Laboratorio <br>
-                        Sonoro 
-                        reación y <br>
-                        producción <br>
-                        musical
-                    </p>
-                </article>
+                    <article class="col-3 alto-grids__taller">
+                        <p>infancias en <br>torno al Archivo Witcomb
+                        </p>
+                    </article>
 
-                <article class="col-5 texto-grid">
-                    <p class="texto-grid__horario">Miércoles de 19 a 21hs <br>
-                        Inicia el 3 de abril(12 clases) <br>
-                        Nacho Sánchez</p>
-
-                    <p class="texto-grid__desc">El laboratorio propone brindar un espacio de investigación, producción y realización de proyectos
-                        audiovisuales (artes escénicas, instalaciones, conciertos, etc) que partan desde la música o el
-                        diseño sonoro. Desde el primer encuentro, los concurrentes podrán compartir gustos, inquietudes
-                        o temáticas a desarrollar, los cuales serán el inicio del desarrollo de un proyecto.
-                    </p>
-                </article>
+                    <article class="col-5 texto-grid">
+                        <div class="texto-grid__horario">
+                            <p><b>20 de noviembre a 21hs</b> <br>
+                               cupos limitados <br>
+                                Docente Lucía Galli </p>
+                            <span class="material-symbols-outlined"> calendar_month </span>
+                        </div>
 
 
-
-            </section>
-
-            <section class="row alto-grids">
-
-                <article class="col-5 imagen-formacion">
-                    <img src="../img/for1.png" alt="campo rosa">
-                </article>
-
-                <article class="col-2 taller">
-                    <p>Laboratorio <br>
-                        Sonoro <br>
-                        reación y <br>
-                        producción <br>
-                        musical
-                    </p>
-                </article>
-
-                <article class="col-5 texto-grid">
-                    <p class="horario">Miércoles de 19 a 21hs <br>
-                        Inicia el 3 de abril(12 clases) <br>
-                        Nacho Sánchez</p>
-
-                    <p class="desc">El laboratorio propone brindar un espacio de investigación, producción y realización de proyectos
-                        audiovisuales (artes escénicas, instalaciones, conciertos, etc) que partan desde la música o el
-                        diseño sonoro. Desde el primer encuentro, los concurrentes podrán compartir gustos, inquietudes
-                        o temáticas a desarrollar, los cuales serán el inicio del desarrollo de un proyecto.
-                    </p>
-                </article>
+                        <p class="texto-grid__desc">En articulación con la muestra en la que se exhibe el material del
+                            archivo fotográfico Witcomb, el
+                            área de Infancias propone un taller orientado a poner a dialogar la construcción de la
+                            identidad en
+                            el mundo del retrato, en los universos que propone el archivo y en la actualidad.
+                        </p>
+                    </article>
 
 
 
-            </section>
+                </section>
 
-            <section class="row alto-grids">
+                <section class="row alto-grids">
 
-                <article class="col-5 imagen-formacion">
-                    <img src="../img/for1.png" alt="campo rosa">
-                </article>
+                    <article class="col-4 alto-grids__img">
+                        <img src="../img/for2.png" alt="campo rosa">
+                    </article>
 
-                <article class="col-2 taller">
-                    <p>Laboratorio <br>
-                        Sonoro <br>
-                        reación y <br>
-                        producción <br>
-                        musical
-                    </p>
-                </article>
+                    <article class="col-3 alto-grids__taller">
+                        <p>Leyendo a Boris Groys
+                        </p>
+                    </article>
 
-                <article class="col-5 texto-grid">
-                    <p class="horario">Miércoles de 19 a 21hs <br>
-                        Inicia el 3 de abril(12 clases) <br>
-                        Nacho Sánchez</p>
-
-                    <p class="desc">El laboratorio propone brindar un espacio de investigación, producción y realización de proyectos
-                        audiovisuales (artes escénicas, instalaciones, conciertos, etc) que partan desde la música o el
-                        diseño sonoro. Desde el primer encuentro, los concurrentes podrán compartir gustos, inquietudes
-                        o temáticas a desarrollar, los cuales serán el inicio del desarrollo de un proyecto.
-                    </p>
-                </article>
+                    <article class="col-5 texto-grid">
+                        <div class="texto-grid__horario">
+                            <p><b>Miércoles de 19 a 21hs</b> <br>
+                                Inicia el 3 de abril <br>
+                                Nacho Sánchez</p>
+                            <span class="material-symbols-outlined"> calendar_month </span>
+                        </div>
 
 
+                        <p class="texto-grid__desc">Doctor en Ciencias Sociales (UBA), Víctor Lenarduzzi dicta el curso
+                            de lectura acompañada Claves para pensar las transformaciones contemporáneas, en el que
+                            aborda la obra de Boris Groys a través de tres encuentros presenciales.
 
-            </section>
-
-            <section class="row alto-grids">
-
-                <article class="col-5 imagen-formacion">
-                    <img src="../img/for1.png" alt="campo rosa">
-                </article>
-
-                <article class="col-2 taller">
-                    <p>Laboratorio <br>
-                        Sonoro <br>
-                        reación y <br>
-                        producción <br>
-                        musical
-                    </p>
-                </article>
-
-                <article class="col-5 texto-grid">
-                    <p class="horario">Miércoles de 19 a 21hs <br>
-                        Inicia el 3 de abril(12 clases) <br>
-                        Nacho Sánchez</p>
-
-                    <p class="desc">El laboratorio propone brindar un espacio de investigación, producción y realización de proyectos
-                        audiovisuales (artes escénicas, instalaciones, conciertos, etc) que partan desde la música o el
-                        diseño sonoro. Desde el primer encuentro, los concurrentes podrán compartir gustos, inquietudes
-                        o temáticas a desarrollar, los cuales serán el inicio del desarrollo de un proyecto.
-                    </p>
-                </article>
+                            Groys ha aportado una serie de claves muy originales para pensar diferentes aspectos del
+                            mundo contemporáneo. Entre sus inquietudes están los problemas artísticos, los modos de
+                            existencia y experiencia del cuerpo, como también las cuestiones vinculadas al control y la
+                            vigilancia como a la autonomía y la libertad.
+                        </p>
+                    </article>
 
 
 
-            </section>
- </div>
+                </section>
+
+                <section class="row alto-grids">
+
+                    <article class="col-4 alto-grids__img">
+                        <img src="../img/for3.png" alt="campo rosa">
+                    </article>
+
+                    <article class="col-3 alto-grids__taller">
+                        <p>Encuentro sobre prácticas pedagógicas en espacios culturales
+                        </p>
+                    </article>
+
+                    <article class="col-5 texto-grid">
+                        <div class="texto-grid__horario">
+                            <p><b>29 y 30 de septiembre</b> <br>
+                                Inicia el 19hs puntual <br>
+                                Por Fanny Zeiguer y Melina Gaggero
+
+</p>
+                            <span class="material-symbols-outlined"> calendar_month </span>
+                        </div>
+
+
+                        <p class="texto-grid__desc">En cooperación con la Fundación Medifé, invita a educadorxs,
+                            curadorxs, y trabajadorxs de la cultura de todo el país a participar del Encuentro Usted
+                            está aquí, que busca reflexionar acerca de las prácticas pedagógicas en espacios culturales.
+
+                            La inscripción está abierta del 8 al 15 de agosto de 2022. El 22 de agosto se anunciarán lxs
+                            seleccionadxs. Durante septiembre se compartirán propuestas de lecturas y podcast de manera
+                            virtual para adentrarse en la propuesta. El encuentro presencial se realizará en dos
+                            jornadas completas, el jueves 29 y el viernes 30 de septiembre de 2022.
+                        </p>
+                    </article>
+
+
+
+                </section>
+
+                <section class="row alto-grids">
+
+                    <article class="col-4 alto-grids__img">
+                        <img src="../img/for4.png" alt="campo rosa">
+                    </article>
+
+                    <article class="col-3 alto-grids__taller">
+                        <p>Manada
+                        </p>
+                    </article>
+
+                    <article class="col-5 texto-grid">
+                        <div class="texto-grid__horario">
+                            <p><b>Miércoles de 19 a 21hs</b> <br>
+                                Inicia el 3 de abril <br>
+                                Lucas Olarte y Francisca Lysionek</p>
+                            <span class="material-symbols-outlined"> calendar_month </span>
+                        </div>
+
+
+                        <p class="texto-grid__desc">Con idea y dirección general de Julieta Rodríguez Grumberg, Manada
+                            es una obra de danza
+                            contemporánea que investiga los mecanismos sobre la construcción del “poder” y cómo a partir
+                            de él
+                            se establecen relaciones, cómo se definen y redistribuyen los roles.
+                        </p>
+                    </article>
+
+
+
+                </section>
+            </div>
         </main>
         <br><br>
         <footer class="footer">
-            <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram"> </a>
+            <a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="instagram"></a>
             <a href="https://www.facebook.com/"><img src="../img/telegram.png" alt="telegram"></a>
             <a href="https://twitter.com/home"><img src="../img/twitter.png" alt="twitter"></a>
             <a href="https://web.telegram.org/"><img src="../img/FB.png" alt="facebook"></a>

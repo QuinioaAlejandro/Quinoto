@@ -24,7 +24,41 @@
   .header__nav--li {
     color: #E7344C; }
 
+.navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0; }
+
+.nav-link--active {
+  font-weight: bold;
+  color: #522745 !important; }
+
+.nav-link:hover {
+  color: #FF73B8;
+  transition: 0.3s; }
+
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  color: white;
+  text-align: center;
+  font-family: josefin sans;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: .2rem;
+  padding-bottom: 2rem; }
+  .footer img {
+    width: 2.5rem;
+    margin: 0 10px; }
+
+.footer p {
+  margin: 0; }
+
+@media (max-width: 992px) {
+  .nav-link {
+    font-size: 0.7rem; } }
+
 .main-index {
+  justify-content: center;
   background-image: url("../img/index-qionoto.jpg");
   background-repeat: no-repeat;
   height: 100vh;
@@ -42,6 +76,9 @@
     background-repeat: no-repeat; }
   .main-index--fcion {
     background-image: url("../img/img-formacion.png") !important;
+    background-repeat: no-repeat; }
+  .main-index--ag {
+    background-image: url("../img/banner-agenda.png") !important;
     background-repeat: no-repeat; }
 
 .slider {
@@ -103,7 +140,8 @@
 
 .eventos {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  margin-bottom: 7vh; }
   .eventos h3 {
     font-family: aboreto;
     text-transform: uppercase;
@@ -115,30 +153,44 @@
     font-family: josefin sans;
     font-weight: 100; }
   .eventos__uno {
-    padding: 2rem 0 2rem 7rem;
+    padding: 2rem 0rem;
+    margin-left: 10%;
     color: white;
     height: 50vh;
-    width: 50%;
+    width: 40%;
     background-position: right;
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat; }
     .eventos__uno--e1 {
-      background-image: url(../../img/imagen-evento.jpg); }
+      background-image: url("../img/evento2.jpg"); }
+    .eventos__uno--e2 {
+      background-image: url("../img/evento3.jpg"); }
+    .eventos__uno--e3 {
+      background-image: url("../img/evento4.jpg"); }
   .eventos__dos {
-    padding: 2rem 0 2rem 7rem;
+    padding: 2rem 0 2rem 5rem;
+    margin-right: 10%;
     color: white;
     height: 50vh;
-    width: 50%;
+    width: 40%;
     background-position: right;
-    background-size: 50%;
+    background-size: 60%;
     background-repeat: no-repeat; }
+    .eventos__dos--e1 {
+      background-image: url(../img/evento5.jpg); }
+    .eventos__dos--e2 {
+      background-image: url(../img/evento6.png); }
+    .eventos__dos--e3 {
+      background-image: url(../img/evento7.png); }
   .eventos__boton {
     background: transparent;
-    color: yellow;
     text-transform: uppercase;
     font-family: aboreto;
     letter-spacing: 0.6rem;
     border: 0; }
+    .eventos__boton a {
+      color: yellow;
+      text-decoration: none !important; }
 
 .cards-one {
   width: 90%;
@@ -234,6 +286,7 @@
   .contacto-form__altura-form {
     height: 15vw; }
   .contacto-form__form {
+    font-weight: 100;
     font-family: josefin sans;
     background-color: purple;
     color: white;
@@ -251,7 +304,7 @@
     font-family: josefin sans;
     text-transform: uppercase; }
   .contacto-form__comentario {
-    background-color: red; }
+    background-color: #20083e; }
 
 @media (max-width: 992px) {
   .contacto-form {
@@ -350,7 +403,7 @@
   width: 80%;
   margin: 40px auto;
   color: white;
-  font-family: lato;
+  font-family: aboreto;
   display: grid;
   grid-template-columns: 0.4fr 1.6fr;
   grid-template-rows: 2fr repeat(5, auto);
@@ -405,17 +458,46 @@
 
 .alto-grids {
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+  width: 98%;
+  margin: auto;
+  align-items: center; }
+  .alto-grids__taller {
+    font-family: aboreto;
+    font-size: 2rem;
+    color: white;
+    padding: 0 5rem; }
+  .alto-grids__img {
+    text-align: center; }
 
-.texto-grid__horario {
-  font-family: josefin sans;
-  font-size: 1.3rem;
-  font-weight: 200; }
-
-.imagen-formacion img {
-  width: inherit;
-  width: 100%;
-  transition: transform 0.2s; }
+.texto-grid {
+  padding: 0rem 5rem 0rem 0rem; }
+  .texto-grid__horario {
+    font-family: josefin sans;
+    font-size: 0.7rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: black;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .texto-grid__horario span {
+      font-size: 3rem;
+      color: #fff082; }
+    .texto-grid__horario p {
+      margin-bottom: 0rem; }
+    .texto-grid__horario b {
+      color: #E7344C;
+      font-size: 0.9rem; }
+  .texto-grid__desc {
+    color: white;
+    font-family: josefin sans;
+    font-weight: 100;
+    font-size: 1.3rem;
+    line-height: 1.5rem; }
 
 .main-p h1 {
   font-family: aboreto;
@@ -433,27 +515,25 @@
     font-family: josefin sans;
     font-size: 1rem;
     font-weight: 100; }
-  .alto-grids {
-    flex-direction: column; }
+  .alto-grids__img {
+    width: 100%; }
+    .alto-grids__img img {
+      width: 100%; }
+  .alto-grids__taller {
+    padding: 0rem 2rem; }
+  .texto-grid {
+    width: 100%;
+    padding: 0rem 2rem; }
+    .texto-grid__horario {
+      margin-top: 1rem;
+      margin-bottom: 0.9rem; }
+      .texto-grid__horario span {
+        display: none; }
   .main-p h1 {
     font-size: 3rem !important;
     margin: 0;
     font-family: aboreto;
-    text-align: center; }
-  .alto-grids__taller {
-    color: white;
-    font-family: josefin sans; }
-  .alto-grids__texto-grid {
-    text-align: center;
-    width: 100%;
-    color: white;
-    font-family: josefin sans; }
-  .alto-grids__imagen-formacion {
-    width: 100%; }
-    .alto-grids__imagen-formacion img {
-      width: 100%; }
-  .slider__encabezado h2 {
-    margin: 0; } }
+    text-align: center; } }
 
 /* GENERAL */
 * {
@@ -467,11 +547,11 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; }
+  background: #FCFC7E; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: green; }
+  background: #3CD3AB; }
 
 /* google icons */
 .material-symbols-outlined {
@@ -487,14 +567,10 @@
   background: linear-gradient(180deg, #26004b 0%, #03010d 100%); }
 
 .background-one {
-  background-color: black; }
+  background: linear-gradient(180deg, #26004b 0%, #03010d 100%); }
 
 .main-p h1 {
   color: white; }
-
-.nav-link:hover {
-  color: orange;
-  transition: 0.3s; }
 
 .navbar a {
   color: white; }
@@ -576,32 +652,6 @@
   font-family: aboreto;
   font-size: 4rem; }
 
-/* FOOTER */
-.footer {
-  grid-area: footer;
-  color: white;
-  text-align: center; }
-
-.footer img {
-  margin: 0 10px; }
-
-/* CARDS */
-/* AGENDA */
-.banner {
-  width: 100%;
-  height: 600px;
-  background-image: url("../img/banner-agenda.png");
-  margin: auto;
-  overflow: hidden; }
-  .banner__filter {
-    color: white;
-    font-size: 180px;
-    font-family: aboreto;
-    background-color: rgba(0, 0, 0, 0.361);
-    width: 100%;
-    line-height: 600px;
-    text-align: center; }
-
 /* ESPACIO */
 .espacio h3 {
   line-height: 40px;
@@ -631,13 +681,6 @@
   font-family: aboreto;
   font-size: 2rem;
   color: white; }
-
-/* CONTACTO */
-/* FORMACION */
-/*  IFRAME */
-/* FOOTER */
-.footer p {
-  margin: 0; }
 
 /* Mobile */
 @media (max-width: 992px) {

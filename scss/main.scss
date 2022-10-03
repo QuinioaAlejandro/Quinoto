@@ -34,12 +34,12 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #FCFC7E;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: green;
+    background: #3CD3AB;
   }
   
  
@@ -64,18 +64,16 @@
 }
 
 .background-one {
-    background-color: black;
+    background: linear-gradient(180deg, rgba(38, 0, 75, 1) 0%, rgba(3, 1, 13, 1) 100%);
 }
+
+
 
 .main-p h1 {
     color: white;
 }
 
-.nav-link:hover {
-    color: orange;
-    transition: 0.3s;
 
-}
 
 
 .navbar a {
@@ -189,39 +187,6 @@
 }
 
 
-/* FOOTER */
-.footer {
-    grid-area: footer;
-    color: white;
-    text-align: center;
-}
-
-.footer img {
-    margin: 0 10px;
-}
-
-/* CARDS */
-
-
-
-/* AGENDA */
-
-.banner {
-    width: 100%;
-    height: 600px;
-    background-image: url('../img/banner-agenda.png');
-    margin: auto;
-    overflow: hidden;
-    &__filter {
-        color: white;
-        font-size: 180px;
-        font-family: aboreto;
-        background-color: rgba(0, 0, 0, 0.361);
-        width: 100%;
-        line-height: 600px;
-        text-align: center;
-    }
-}
 
 
 
@@ -274,19 +239,9 @@
     color: white;
 }
 
-/* CONTACTO */
-
-/* FORMACION */
 
 
 
-/*  IFRAME */
-
-/* FOOTER */
-
-.footer p {
-    margin: 0;
-}
 
 /* Mobile */
 
